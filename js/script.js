@@ -140,7 +140,8 @@ function createMessageElement(messageObject) {
         messageObject.createdOn.toLocaleString() +
         '<em>' + expiresIn+ ' min. left</em></h3>' +
         '<p>' + messageObject.text + '</p>' +
-        '<button>+5 min.</button>' +
+        //#9 #btn #acc
+        '<button class="accent">+5 min.</button>' +
         '</div>';
 }
 

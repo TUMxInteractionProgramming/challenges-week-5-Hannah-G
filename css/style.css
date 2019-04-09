@@ -21,6 +21,7 @@ body {
     background-color: #F5F5F5;
 }
 
+
 button, strong {
     text-transform: uppercase;
 }
@@ -31,8 +32,9 @@ button, strong {
     position: absolute;
     height: 100%;
     width: 40%;
-
     background-color: #3F51B5; /* temporary background color to see the effect, is completely hidden now */
+    /* #9 #shdw #idx: */
+    z-index: 2;
 }
 
 #chat {
@@ -48,6 +50,8 @@ button, strong {
     top: 64px;
     bottom: 72px;
     overflow-y: auto;
+    /* #9 #msgs #mrg correct the margin */
+    margin-left: 20px;
 }
 
 /* APP BAR */
@@ -158,18 +162,15 @@ li.selected {
     bottom: 0;
     width: 100%;
     display: flex;
+    height: 72px;  /* #9 #btns #height */
 }
 
-#tab-bar button, #chat-bar button {
-    background-color: white;
-    border: none;
-    font-size: 13px;
+/* #9 #btns #fix */
+#tab-bar button {
     width: 33%;
     height: 72px;
-    padding: 16px;
-
-    /* flexify the buttons by growing them equally */
-    flex-grow: 1;
+    margin: 0;
+    flex-grow: 1;  /* flexify for equally distributed growing */
 }
 
 #tab-bar button.selected {
@@ -178,7 +179,6 @@ li.selected {
 }
 
 #tab-bar button i {
-    /* #7 #icns #tab select i instead of img and adjust font size */
     display: block;
     font-size: 24px;
     margin: 0 auto 4px auto;
@@ -195,11 +195,10 @@ li.selected {
     font-size: 24px;
 }
 
+
 #emojis {
-    /* emoji menu */
-    /* colors and borders */
-    background-color:white;
-    border: 1px solid black;
+    background-color: white;
+    /* #9 #shdw #elv*/
 
     /* size & alignment */
     position: absolute;
@@ -217,9 +216,11 @@ li.selected {
     /* scroll when it has too many emojis */
     overflow-y: auto;
 
-    /* hide the #smile menu */
+    /* hide the #emoji menu */
     display: none;
 }
+
+
 
 /* #8 #input #styles for font, border, and alignment */
 #chat-bar input {
@@ -268,20 +269,119 @@ li.selected {
 .message p {
     background-color: white;
     padding: 16px;
+    /* #9 #msgs #shd*/
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
 }
+
 
 .message button {
-    /* +5 min. button*/
+    /* #9 #btns #fix
+    +5 min. button
     background-color: #CDDC39;
     color: black;
-    text-transform: uppercase;
-
+    text-transform: uppercase;*/
+    /* #9 #btns styles adjusted in #fix*/
     /* right/bottom alignment of button */
     position: absolute;
-    right: 8px;
-    bottom: 8px;
+    right: 0;
+    bottom: 0;
 }
 
+
+
 .message.own {
-    margin-left: 17.5%;
+    /* #9  #mrg */
+    /* #9 #msgs #mrg*/
+    margin-left: calc(20% - 20px);
+}
+
+
+
+/* #9 #btns #all Material Design Button style*/
+button {
+    height: 36px;
+    min-width: 64px;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 0 16px;
+    margin: 8px;
+    background-color: white;
+    text-color: black; /*primary text color*/
+    border: none;
+    text-transform: uppercase;
+}
+
+button.primary {
+    /* #9 #btns #clss: primary button color scheme */
+    background-color: #3F51B5;
+    color: white;
+}
+
+button.accent {
+    /* #9 #btns #clss: accent button color scheme */
+    background-color: #CDDC39;
+    color: black;
+}
+
+/* #9 #flt #btn Material Design Floating Action Button */
+#FAB {
+    width: 56px;
+    min-width: 56px; /* to overwrite it from other button */
+
+    /* circle */
+    border-radius: 50%;
+
+    height: 56px;
+    font-size: 24px;
+
+    position: absolute;
+    bottom: calc(72px + 16px); /* tab bar size plus margin*/
+    right: 16px;
+}
+
+
+/* #9 #flt #btn: FLOATING ACTION BUTTON */
+#add-channel {
+    /* dimension */
+    width: 56px;
+
+    height: 56px;
+    font-size: 24px;
+    /* position */
+
+
+}
+
+
+/* #9 #shdw #elv: Material Design Shadows/Elevation classes
+with credits to Scott Roa https://stackoverflow.com/users/6467522/scott-roa
+https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-material-design-elevations) */
+
+.shadow--2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow--3dp {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow--4dp {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow--6dp {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.shadow--16dp {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow--24dp {
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
 }
