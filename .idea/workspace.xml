@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00efea7e-4196-41dc-9640-a77aeb6e9ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,38 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="321" column="52" lean-forward="true" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../challenges-von-julius-IPP/challenges-week-5-GordonFreeman47/Lösung/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="50" column="55" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../challenges-von-julius-IPP/challenges-week-5-GordonFreeman47/Lösung/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="186" column="14" lean-forward="true" selection-start-line="186" selection-start-column="14" selection-end-line="186" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../challenges-von-julius-IPP/challenges-week-5-GordonFreeman47/Lösung/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="181" column="51" lean-forward="true" selection-start-line="181" selection-start-column="51" selection-end-line="181" selection-end-column="51" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -107,8 +74,8 @@
       <find>accent</find>
       <find>button</find>
       <find>message</find>
-      <find>butt</find>
       <find>#flt</find>
+      <find>butt</find>
       <find>fab</find>
       <find>app</find>
     </findStrings>
@@ -120,8 +87,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -187,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554818865965</updated>
-      <workItem from="1554818877161" duration="6091000" />
+      <workItem from="1554818877161" duration="6132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6091000" />
+    <option name="totallyTimeSpent" value="6132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1680" height="967" extended-state="0" />
@@ -245,10 +212,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../challenges-von-julius-IPP/challenges-week-5-GordonFreeman47/Lösung/index.html">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="55" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -259,19 +228,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/../challenges-von-julius-IPP/challenges-week-5-GordonFreeman47/Lösung/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="401">
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="321" column="52" lean-forward="true" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
+        <state relative-caret-position="144">
+          <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
         </state>
       </provider>
     </entry>
