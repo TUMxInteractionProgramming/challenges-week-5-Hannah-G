@@ -87,13 +87,47 @@ h1 a {
     color: white;
 }
 
-h1 i {
-    /* #7 #icns #str  */
-    position:absolute;
-    right: 16px;
-    /* #7 #icns #small adjust icon size */
+/* h1 i {
     font-size:24px;
 }
+*/
+
+h1 #channel-star {
+    position: absolute;
+    right: 16px;
+    font-size: 24px;
+    /* #9 #btns #str: the larger button now needs top to be aligned */
+    top: 6px;
+    right: 0;
+}
+
+#app-bar-create {
+    /* #10 #new #styled and placed */
+    align-items: center;
+    padding-right: 0;
+    /* by default this element is hidden*/
+    display: none;
+}
+
+#app-bar-create.show {
+    /* #10 #new #styled and placed */
+    /* to show the app-bar, we need display:flex, not display:none */
+    display: flex;
+}
+
+#app-bar-create input {
+    /* #10 #new #styled and placed */
+    /* styles */
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 3px;
+    padding: 4px;
+    /* alignment */
+    display: block;
+    flex-grow: 1;
+}
+
 
 /* CHANNELS LIST */
 
@@ -123,7 +157,7 @@ li .channel-meta {
     top: 12px;
 
     /* #8 #channel #centered blue boxes */
-    display:flex;
+    display: flex;
 }
 
 li .channel-meta span {
@@ -138,10 +172,10 @@ li .channel-meta span {
     font-size: 10px;
 
     /* #8 #channel #centered blue boxes' text content */
-    align-self:center;
+    align-self: center;
 }
 
-li i.fas, li i.far  {
+li i.fas, li i.far {
     /* #7 #icns #small in channels view */
     font-size: 24px;
     padding-left: 4px;
@@ -162,7 +196,7 @@ li.selected {
     bottom: 0;
     width: 100%;
     display: flex;
-    height: 72px;  /* #9 #btns #height */
+    height: 72px; /* #9 #btns #height */
 }
 
 /* #9 #btns #fix */
@@ -170,7 +204,7 @@ li.selected {
     width: 33%;
     height: 72px;
     margin: 0;
-    flex-grow: 1;  /* flexify for equally distributed growing */
+    flex-grow: 1; /* flexify for equally distributed growing */
 }
 
 #tab-bar button.selected {
@@ -186,13 +220,21 @@ li.selected {
 
 /* CHAT BAR */
 
+#chat-bar {
+    /* #9 #flex the #chat-bar */
+    justify-content: space-between;
+    align-items: center;
+}
+
 #chat-bar button {
-    /* override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
-
-    /* #7 #icns #smile adjust fa size */
     font-size: 24px;
+}
+
+#button-create {
+    /* #10 #new #styled and placed;  in the beginning it isinvisible */
+    display: none;
 }
 
 
@@ -219,7 +261,6 @@ li.selected {
     /* hide the #emoji menu */
     display: none;
 }
-
 
 
 /* #8 #input #styles for font, border, and alignment */
@@ -289,13 +330,11 @@ li.selected {
 }
 
 
-
 .message.own {
     /* #9  #mrg */
     /* #9 #msgs #mrg*/
     margin-left: calc(20% - 20px);
 }
-
 
 
 /* #9 #btns #all Material Design Button style*/
